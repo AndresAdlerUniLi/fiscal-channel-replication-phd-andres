@@ -1,0 +1,156 @@
+
+VAR Estimation Results:
+========================= 
+Endogenous variables: EBP, Treasury_1Y, Unemployment_Rate, dlog_GDP, dlog_CPI 
+Deterministic variables: const 
+Sample size: 145 
+Log Likelihood: -147.683 
+Roots of the characteristic polynomial:
+0.9535 0.8726 0.8726 0.523 0.523 0.5181 0.5181 0.454 0.2849 0.01277
+Call:
+VAR(y = var_data_clean, p = chosen_lag_clean, type = "const")
+
+
+Estimation results for equation EBP: 
+==================================== 
+EBP = EBP.l1 + Treasury_1Y.l1 + Unemployment_Rate.l1 + dlog_GDP.l1 + dlog_CPI.l1 + EBP.l2 + Treasury_1Y.l2 + Unemployment_Rate.l2 + dlog_GDP.l2 + dlog_CPI.l2 + const 
+
+                     Estimate Std. Error t value Pr(>|t|)    
+EBP.l1                1.20558    0.08718  13.829  < 2e-16 ***
+Treasury_1Y.l1        0.01528    0.05790   0.264  0.79224    
+Unemployment_Rate.l1  0.41772    0.14078   2.967  0.00356 ** 
+dlog_GDP.l1           0.04739    0.05740   0.826  0.41051    
+dlog_CPI.l1           0.18370    0.05767   3.186  0.00180 ** 
+EBP.l2               -0.41217    0.08988  -4.586 1.03e-05 ***
+Treasury_1Y.l2       -0.03755    0.05588  -0.672  0.50275    
+Unemployment_Rate.l2 -0.42626    0.13757  -3.099  0.00237 ** 
+dlog_GDP.l2           0.14731    0.05477   2.689  0.00807 ** 
+dlog_CPI.l2           0.08672    0.05805   1.494  0.13757    
+const                -0.13406    0.11569  -1.159  0.24861    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.2762 on 134 degrees of freedom
+Multiple R-Squared: 0.7821,	Adjusted R-squared: 0.7658 
+F-statistic: 48.09 on 10 and 134 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation Treasury_1Y: 
+============================================ 
+Treasury_1Y = EBP.l1 + Treasury_1Y.l1 + Unemployment_Rate.l1 + dlog_GDP.l1 + dlog_CPI.l1 + EBP.l2 + Treasury_1Y.l2 + Unemployment_Rate.l2 + dlog_GDP.l2 + dlog_CPI.l2 + const 
+
+                     Estimate Std. Error t value Pr(>|t|)    
+EBP.l1               -0.16121    0.13056  -1.235 0.219094    
+Treasury_1Y.l1        1.29578    0.08671  14.944  < 2e-16 ***
+Unemployment_Rate.l1 -0.32919    0.21084  -1.561 0.120796    
+dlog_GDP.l1           0.06279    0.08597   0.730 0.466466    
+dlog_CPI.l1          -0.03007    0.08636  -0.348 0.728278    
+EBP.l2                0.13165    0.13460   0.978 0.329822    
+Treasury_1Y.l2       -0.32461    0.08368  -3.879 0.000164 ***
+Unemployment_Rate.l2  0.31409    0.20603   1.525 0.129730    
+dlog_GDP.l2          -0.04107    0.08203  -0.501 0.617400    
+dlog_CPI.l2          -0.01872    0.08694  -0.215 0.829821    
+const                 0.16758    0.17327   0.967 0.335194    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.4136 on 134 degrees of freedom
+Multiple R-Squared: 0.9817,	Adjusted R-squared: 0.9804 
+F-statistic: 719.7 on 10 and 134 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation Unemployment_Rate: 
+================================================== 
+Unemployment_Rate = EBP.l1 + Treasury_1Y.l1 + Unemployment_Rate.l1 + dlog_GDP.l1 + dlog_CPI.l1 + EBP.l2 + Treasury_1Y.l2 + Unemployment_Rate.l2 + dlog_GDP.l2 + dlog_CPI.l2 + const 
+
+                      Estimate Std. Error t value Pr(>|t|)    
+EBP.l1                0.168511   0.050741   3.321  0.00116 ** 
+Treasury_1Y.l1        0.012874   0.033698   0.382  0.70303    
+Unemployment_Rate.l1  1.392457   0.081938  16.994  < 2e-16 ***
+dlog_GDP.l1          -0.069005   0.033412  -2.065  0.04082 *  
+dlog_CPI.l1          -0.015912   0.033564  -0.474  0.63621    
+EBP.l2               -0.046084   0.052312  -0.881  0.37992    
+Treasury_1Y.l2       -0.005849   0.032522  -0.180  0.85754    
+Unemployment_Rate.l2 -0.417972   0.080068  -5.220 6.65e-07 ***
+dlog_GDP.l2          -0.075026   0.031880  -2.353  0.02006 *  
+dlog_CPI.l2           0.076463   0.033789   2.263  0.02525 *  
+const                 0.153937   0.067338   2.286  0.02382 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.1607 on 134 degrees of freedom
+Multiple R-Squared: 0.9897,	Adjusted R-squared: 0.9889 
+F-statistic:  1285 on 10 and 134 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation dlog_GDP: 
+========================================= 
+dlog_GDP = EBP.l1 + Treasury_1Y.l1 + Unemployment_Rate.l1 + dlog_GDP.l1 + dlog_CPI.l1 + EBP.l2 + Treasury_1Y.l2 + Unemployment_Rate.l2 + dlog_GDP.l2 + dlog_CPI.l2 + const 
+
+                     Estimate Std. Error t value Pr(>|t|)    
+EBP.l1               -0.69891    0.14822  -4.715 5.97e-06 ***
+Treasury_1Y.l1       -0.07266    0.09843  -0.738   0.4617    
+Unemployment_Rate.l1 -0.47186    0.23934  -1.971   0.0507 .  
+dlog_GDP.l1           0.04725    0.09760   0.484   0.6291    
+dlog_CPI.l1          -0.24314    0.09804  -2.480   0.0144 *  
+EBP.l2                0.47088    0.15280   3.082   0.0025 ** 
+Treasury_1Y.l2        0.12601    0.09500   1.326   0.1869    
+Unemployment_Rate.l2  0.48183    0.23388   2.060   0.0413 *  
+dlog_GDP.l2           0.16304    0.09312   1.751   0.0823 .  
+dlog_CPI.l2          -0.13545    0.09870  -1.372   0.1722    
+const                 0.51053    0.19669   2.596   0.0105 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.4695 on 134 degrees of freedom
+Multiple R-Squared: 0.3939,	Adjusted R-squared: 0.3486 
+F-statistic: 8.707 on 10 and 134 DF,  p-value: 6.939e-11 
+
+
+Estimation results for equation dlog_CPI: 
+========================================= 
+dlog_CPI = EBP.l1 + Treasury_1Y.l1 + Unemployment_Rate.l1 + dlog_GDP.l1 + dlog_CPI.l1 + EBP.l2 + Treasury_1Y.l2 + Unemployment_Rate.l2 + dlog_GDP.l2 + dlog_CPI.l2 + const 
+
+                     Estimate Std. Error t value Pr(>|t|)   
+EBP.l1               -0.30122    0.13559  -2.222  0.02799 * 
+Treasury_1Y.l1        0.01370    0.09005   0.152  0.87931   
+Unemployment_Rate.l1 -0.48748    0.21895  -2.226  0.02766 * 
+dlog_GDP.l1          -0.03399    0.08928  -0.381  0.70402   
+dlog_CPI.l1           0.15278    0.08969   1.703  0.09079 . 
+EBP.l2                0.33964    0.13979   2.430  0.01644 * 
+Treasury_1Y.l2        0.05274    0.08690   0.607  0.54499   
+Unemployment_Rate.l2  0.47465    0.21395   2.218  0.02821 * 
+dlog_GDP.l2          -0.09072    0.08519  -1.065  0.28880   
+dlog_CPI.l2          -0.09082    0.09029  -1.006  0.31630   
+const                 0.48429    0.17994   2.691  0.00802 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.4295 on 134 degrees of freedom
+Multiple R-Squared: 0.267,	Adjusted R-squared: 0.2123 
+F-statistic: 4.882 on 10 and 134 DF,  p-value: 5.329e-06 
+
+
+
+Covariance matrix of residuals:
+                        EBP Treasury_1Y Unemployment_Rate dlog_GDP  dlog_CPI
+EBP                0.076263    -0.02706          0.004107 -0.04215 -0.032400
+Treasury_1Y       -0.027059     0.17105         -0.017732  0.06662  0.035052
+Unemployment_Rate  0.004107    -0.01773          0.025835 -0.03008 -0.003286
+dlog_GDP          -0.042151     0.06662         -0.030078  0.22044  0.013425
+dlog_CPI          -0.032400     0.03505         -0.003286  0.01342  0.184475
+
+Correlation matrix of residuals:
+                       EBP Treasury_1Y Unemployment_Rate dlog_GDP dlog_CPI
+EBP                1.00000     -0.2369           0.09252 -0.32509 -0.27316
+Treasury_1Y       -0.23691      1.0000          -0.26674  0.34310  0.19732
+Unemployment_Rate  0.09252     -0.2667           1.00000 -0.39856 -0.04760
+dlog_GDP          -0.32509      0.3431          -0.39856  1.00000  0.06657
+dlog_CPI          -0.27316      0.1973          -0.04760  0.06657  1.00000
+
+
