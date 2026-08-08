@@ -1,0 +1,6 @@
+scenario,output_q20,price_q20
+Baseline,-0.165,+0.030
+No tax response,-0.432,-0.035
+No transfer response,-0.224,-0.017
+No spending response,-0.093,+0.007
+No fiscal response,-0.439,-0.108

@@ -1,0 +1,11 @@
+Data Explanation,,,
+See paper and on-line appendix for sources and further details: https://www.bankofcanada.ca/wp-content/uploads/2021/08/swp2021-41.pdf,,,
+,,,
+Abbreviation,,Meaning,Definition
+DATES,,date,"Year.Quarter (00=Q1, .25=Q2 etc.)"
+T_PI,,Narratively identified shock to personal income taxes,Change in federal personal income tax liabilities divided by lagged taxable personal income
+T_CI,,Narratively identified shock to corporate income taxes,Change in federal corporate income tax liabilities divided by lagged taxable corporate income
+m_PI,,Proxy for shocks to personal income taxes,T_PI where non-zero observations have been subtracted their mean
+m_CI,,Proxy for shocks to corporate income taxes,T_CI where non-zero observations have been subtracted their mean
+APITR,,Average personal income tax rate,Federal personal income tax revenues including contributions to government social insurance divided by personal income tax base
+ACITR,,Average Corporate income tax rate,Federal corporate income tax reveneues divided by coporate income tax base

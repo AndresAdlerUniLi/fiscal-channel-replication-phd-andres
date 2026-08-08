@@ -1,0 +1,5 @@
+proxy,aggregation,GDP_impact,GDP_8q,deflator_8q,EBP_8q,deficit_8q,tax_8q,first_stage_F
+pc1,sum,0.174,0.219,0.134,0.033,-0.055,0.399,17.2
+pc1,timing,0.096,0.055,0.086,0.029,0.068,0.023,21.1
+MP_median,sum,0.15,0.167,0.084,0.029,-0.023,0.247,13.1
+MP_median,timing,0.044,-0.056,0.027,0.023,0.151,-0.275,17.5

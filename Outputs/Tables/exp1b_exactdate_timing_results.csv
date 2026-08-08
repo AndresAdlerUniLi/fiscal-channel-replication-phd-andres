@@ -1,0 +1,4 @@
+rule,GDP_impact,GDP_4q,GDP_8q,deflator_4q,EBP_4q,yield_impact,first_stage_F
+sum_exactdate,0.15,0.252,0.167,0.052,-0.023,0.25,13.096
+timing_exactdate,0.044,0.037,-0.056,0.005,0.002,0.25,17.501
+carry_exactdate,-0.049,-0.201,-0.317,-0.091,0.056,0.25,4.099
